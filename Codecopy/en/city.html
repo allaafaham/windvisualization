@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/prototype.css">
+    <title>Document</title>
+
+    <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+    <style>
+      .turbine-image{
+       background: url(../city.jpg);
+       background-position: center;
+       background-repeat: no-repeat;
+       /* background-size: cover; */
+      }
+      div#item {
+    left: 37%;
+    top: 268px;
+}
+    </style>
+
+</head>
+<body>
+  <a href="../de/city.html"><button class="langBtn" >Change Language</button></a>
+  <a href="../assets/docEN.pdf"><button class="pdfLink" >View Documentation</button></a>
+
+  <a class="homeButton" href="../en/index.html"><button>Go to Home</button></a>
+  <div class="main">
+
+    <div class="turbine-image">
+        <div class="image-container">
+
+            <!-- <img id="turbine-img" src="wind-turbine.png" alt=""> -->
+            <div id="item">
+              <div class="mover">
+      
+                <img id="xyz" src="../assets/propeller3.png" alt="">
+                <img src="../assets/wind-turbine2.png" alt="">
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="control-panel">
+      <h2>Visualization of the power generated depending on various parameters</h2>
+      <div class="control">
+        <div id="tester" style="width:400px;height:190px;"></div>
+
+        <div class="formula-supply">
+          <h2>log wind profile formula</h2>
+
+          <div class="formula">
+            <table>
+              <tr>
+                <td rowspan="2"> <span id="value">v(h2)</span> =<span class="wnd" id="wnd">v(h1)</span></td>
+                <td class="bottom-mg">log(<sup><span class="ht" id="ht">h2</span></sup>&frasl;<sub>z0</sub>)</td>
+              </tr>
+              <tr>
+                
+                <td>log(<sup>h1</sup>&frasl;<sub>z0</sub>)</td>
+              </tr>
+            </table>
+          </div>
+          <div class="supply-house">
+            <p>Houses supplied<br><span class="supplyValue"></span></p>
+          </div>
+          <div class="legends supply-house">
+            <b>Variables : </b>h2:height2, h1:height1, z0:roughness length,<br>v(h1):wind speed at 10m, <br>v(h2):wind speed at chosen height 
+          </div>
+        </div>
+        
+        <div class="wind-loc-container">
+            <input id="hrange" type="range" min="60" max="100" value="60">
+            <div class="wind-speed-info">
+                <!-- <p>Height: <span id="ht">150</span> m</p> -->
+                <p>Height: <span class="ht" id="ht">60</span>m</p>
+            </div>
+        </div>
+        <div class="wind-loc-container2">
+            <input id="wndrange" type="range" min="0" max="20" value="0">
+            <div class="wind-speed-info">
+                <p>Wind speed at 10m: <span class="wnd" id="wnd">0</span> m/s</p>
+                <!-- <p>Wind speed: <span id="sp">15.00</span>m/s</p> -->
+            </div>
+        </div>
+       </div>
+  
+      </div>
+  </div>
+
+
+  <script>
+    z = 1
+  </script>
+<script src="../js/prototype.js"></script>
+</body>
+</html>

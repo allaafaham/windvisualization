@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.homeButton{
+    position: fixed;
+    top: 5px; left: 167px;
+    z-index: 1000;
+    
+}
+.langBtn{
+    position: fixed;
+    top: 5px; left: 5px;
+    z-index: 1000; 
+    padding: 3px;
+}
+.homeButton button{
+    padding: 3px;
+}
+.wind-loc-container {
+    /* position: fixed; */
+    bottom: 29px;
+    right: 35px;
+    text-align: center;
+    background: white;
+    background: white;
+    padding: 15px;
+    height: 164px;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 169px;
+    float: right;
+    width: 153px;
+}
+
+.wind-loc-container2 {
+    /* position: fixed; */
+    bottom: 29px;
+    right: 53px;
+    text-align: center;
+    background: white;
+    padding: 15px;
+    height: 164px;
+    border: 2px solid;
+    width: 173px;
+    border-radius: 10px;
+    margin-right: 45px;
+}
+
+input[type="range"] {
+    transform: rotate(-90deg);
+    height: 11px;
+    bottom: -34px;
+    position: relative;
+    bottom: -44px;
+    width: 126px;
+}
+
+.wind-speed-info {
+    margin-top: 99px;
+    background: white;
+    font-size: 20px;
+}
+
+.turbine-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68%;
+    height: 100vh;
+    background: url("../flat.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+    top: -54px;
+}
+.image-container img{
+    transition: 0.3s;
+}
+
+.image-container img {
+    position: relative;
+    margin-bottom: -18px;
+}
+
+
+/* --------------------------- */
+.image-container2 {
+    position: relative;
+}
+
+img#turbine-img1 {
+    /* position: fixed; */
+    top: 250px;
+    animation: spinner 10s infinite linear;  
+}
+
+img#turbine-img2 {
+    /* position: fixed; */
+    bottom: 43px;
+    left: 149px;
+    z-index: -100;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0eg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+div#tester {
+    /* position: fixed; */
+    /* top: 5px; */
+    right: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 1.5px;
+    background: white;
+    margin-bottom: 3px;
+}
+.legends.supply-house {
+    grid-column: span 2;
+}
+
+.formula {
+    /* position: fixed; */
+    bottom: 57px;
+    left: 42%;
+    font-size: 27px;
+    background-color: white;
+    border:2px solid;
+    border-radius: 10px;
+    /* width: 62%; */
+    /* padding: 0px; */
+    /* float: left; */
+    display: inline-block;
+}
+
+td.bottom-mg {
+    border-bottom: 2px solid;
+}
+
+
+.control {
+    transform: scale(0.82);
+    margin-top: -50px;
+}
+.control-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 8px 0px;
+    padding: 8px;
+    width: 30.5%;
+}
+.formula-supply h2 {
+    grid-column: span 2;
+}
+.supply-house {
+    font-size: 19px;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    /* width: 33%; */
+    padding: 9px;
+    float: right;
+    display: inline;
+    text-align: center;
+}
+
+.formula table {margin: auto;}
+
+.main {
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.formula-supply {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 5px;
+    grid-gap: 4px;
+}
+tbody {
+    font-size: 20px;
+}
+
+/* rotate */
+.image-container{height: 631px;}
+
+
+
+    div#item {
+        margin-bottom: 78px;
+        overflow: hidden;
+        width: 200px;
+        position: relative;
+        left: 50%;
+        top: 348px;
+        margin-right:69px;
+    }
+    .mover {
+        position: relative;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        bottom: -38px;
+        transition: 0.3s;
+    }
+    .mover img{
+        width: 100%;
+    }
+    .mover img#xyz{
+        margin-bottom: -10px;
+    }
+    
+
+    .mover img#xyz {
+        margin-bottom: -85px;
+        width: 130px;
+        margin-left: 37px;
+        animation: spinner 0s linear infinite;
+        z-index: 1000000000;
+    }
+
+.pdfLink{
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10000;
+    color:black
+}
+button {
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 7px 16px;
+    border: 4px solid #5fadda;
+    color: white;
+    background: #0000005e;
+    font-weight: bold;
+}

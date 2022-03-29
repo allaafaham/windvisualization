@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <!--Die Seite der Lokatioenen-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height  : 100vh;
+        }
+        figcaption{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+        }
+
+        table {
+            width: 100%;
+            border:1px solid black;
+            width:500px;
+            margin: 50px;
+            font-size: 20px;
+        }
+        .pdfLink{
+    position:fixed;
+    bottom: 3px;
+    left: 3px;
+    z-index: 10000;
+    color:black
+}
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        .langBtn{
+    position: fixed;
+    top: 5px; left: 5px;
+    z-index: 1000; 
+    padding: 3px;
+}
+button {
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 7px 16px;
+    border: 4px solid #5fadda;
+    color: white;
+    background: #0000005e;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body> <!--Texte-->
+    <h1>Bitte wählen Sie einen Standort</h1>
+    <h3>Jeder Standort hat einen andere Rauhigkeitslänge</h2>
+        <a href="../en/location.html"><button class="langBtn" >Sprache Ändern</button></a>
+        <a href="../assets/docDE.pdf"><button class="pdfLink" >Dokumentation Anzeigen</button></a>
+
+        <div class="container">
+            <a href="../de/city.html"><figure>
+                <img height="200" width="345" src="../cityreal.jpg" alt="">
+                <figcaption><button>Lokation Stadt</button></figcaption>
+            </figure></a>
+            <a href="../de/land.html"><figure>
+                <img height="200" width="345" src="../land.jpg" alt="">
+                <figcaption><button>Lokation Feld</button></figcaption>
+            </figure></a>
+            <a href="../de/sea.html"><figure>
+                <img height="200" width="345" src="../sea.jpg" alt="">
+                <figcaption><button>Lokation See</button></figcaption>
+            </div>
+        </figure></a>
+        <table>
+            <tr> <!--Rauhigkeitstabelle -->
+                <th>Standort</th>
+                <td>Stadt</td>
+                <td>Feld</td>
+                <td>See</td>
+                </tr>
+                <tr>
+                <th>Rauhigkeitslänge in m</th>
+                <td>1</td>
+                <td>0.1</td>
+                <td>0.001</td>
+                </tr>
+                <tr>
+                
+               
+        </table>
+</body>
+</html>
